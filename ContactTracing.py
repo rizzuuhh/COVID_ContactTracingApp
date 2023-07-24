@@ -92,7 +92,13 @@ phone_label.pack()
 phone_entry = tk.Entry(window)
 phone_entry.pack()
 
-
 # Additional fields for positive cases
+exposed_date_label = tk.Label(window, text="Date of Exposure (MM/DD/YYYY):", fg=text_color, bg=background_color)
+exposed_date_entry = tk.Entry(window)
+
+
+close_contacts_label = tk.Label(window, text="Names and Contact Information of Close Contacts:", fg=text_color, bg=background_color)
+close_contacts_entry = tk.Entry(window)
+ 
 # Additional field for contact cases
 # Save button 
