@@ -70,7 +70,10 @@ address_label.pack()
 address_entry = tk.Entry(window)
 address_entry.pack()
 
-
+birthday_label = tk.Label(window, text="Birthday (MM/DD/YYYY):", fg=text_color, bg=background_color)
+birthday_label.pack()
+birthday_entry = tk.Entry(window)
+birthday_entry.pack()
 
 
 
