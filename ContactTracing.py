@@ -16,6 +16,20 @@ def save_entry():
         exposed_date = exposed_date_entry.get()
         close_contacts = close_contacts_entry.get()
     # Save data to the CSV file
+        with open("contact_tracing.csv", mode='a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow([status, name, address, birthday, age, sex, phone_number, exposed_date, close_contacts])
+    else:
+        symptoms = symptoms_entry.get()
+
+
+        # Save data to the CSV file
+        with open("contact_tracing.csv", mode='a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow([status, name, address, birthday, age, sex, phone_number, symptoms])
+
+
+
 # Show a confirmation message
 # Create GUI window
 # Load the app photo
