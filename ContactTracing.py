@@ -40,6 +40,9 @@ window.geometry("1000x1000")
 app_photo = tk.PhotoImage(file="c:\\Users\\SAMSUNG\\Downloads\Black Illustration Covid Virus Facebook Post.png")
 
 # Create a label to display the app photo
+app_photo_label = tk.Label(window, image=app_photo)
+app_photo_label.place(x=0, y=0)  
+
 # Entry fields
 # Additional fields for positive cases
 # Additional field for contact cases
