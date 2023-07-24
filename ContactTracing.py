@@ -101,4 +101,7 @@ close_contacts_label = tk.Label(window, text="Names and Contact Information of C
 close_contacts_entry = tk.Entry(window)
  
 # Additional field for contact cases
+symptoms_label = tk.Label(window, text="Symptoms:", fg=text_color, bg=background_color)
+symptoms_entry = tk.Entry(window)
+
 # Save button 
