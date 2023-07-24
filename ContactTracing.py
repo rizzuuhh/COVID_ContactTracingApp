@@ -43,6 +43,23 @@ app_photo = tk.PhotoImage(file="c:\\Users\\SAMSUNG\\Downloads\Black Illustration
 app_photo_label = tk.Label(window, image=app_photo)
 app_photo_label.place(x=0, y=0)  
 
+# Test Status Frame
+test_status_frame = tk.Frame(window, bg=background_color)
+test_status_frame.pack()
+
+# Test Status Frame
+test_status_frame = tk.Frame(window, bg=background_color)
+test_status_frame.pack() 
+
+test_status_label = tk.Label(test_status_frame, text="Have you tested positive for COVID-19 or been in contact with someone who tested positive?", fg=text_color, bg=background_color)
+test_status_label.pack(side=tk.LEFT)
+
+test_status = tk.StringVar(value="Choose One")
+test_status_options = ["Choose One", "Positive", "Contact"]
+test_status_menu = tk.OptionMenu(test_status_frame, test_status, *test_status_options)
+test_status_menu.pack(side=tk.LEFT)
+
+
 # Entry fields
 # Additional fields for positive cases
 # Additional field for contact cases
