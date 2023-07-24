@@ -87,6 +87,11 @@ sex_options = ["Choose One", "Male", "Female", "Other"]
 sex_menu = tk.OptionMenu(window, sex_var, *sex_options)
 sex_menu.pack()
 
+phone_label = tk.Label(window, text="Phone Number:", fg=text_color, bg=background_color)
+phone_label.pack()
+phone_entry = tk.Entry(window)
+phone_entry.pack()
+
 
 # Additional fields for positive cases
 # Additional field for contact cases
