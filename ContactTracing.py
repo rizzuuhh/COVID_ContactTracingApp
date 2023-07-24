@@ -65,6 +65,14 @@ name_label.pack()
 name_entry = tk.Entry(window)
 name_entry.pack()
 
+address_label = tk.Label(window, text="Address:", fg=text_color, bg=background_color)
+address_label.pack()
+address_entry = tk.Entry(window)
+address_entry.pack()
+
+
+
+
 
 
 # Additional fields for positive cases
