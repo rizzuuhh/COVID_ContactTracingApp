@@ -37,8 +37,10 @@ window.title("COVID Contact Tracing App")
 window.geometry("1000x1000")
 
 # Load the app photo
+app_photo = tk.PhotoImage(file="c:\\Users\\SAMSUNG\\Downloads\Black Illustration Covid Virus Facebook Post.png")
+
 # Create a label to display the app photo
 # Entry fields
 # Additional fields for positive cases
 # Additional field for contact cases
-# Save button
+# Save button 
