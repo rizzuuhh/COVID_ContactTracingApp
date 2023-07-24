@@ -27,10 +27,10 @@ def save_entry():
         with open("contact_tracing.csv", mode='a', newline='') as file:
             writer = csv.writer(file)
             writer.writerow([status, name, address, birthday, age, sex, phone_number, symptoms])
+        
+    # Show a confirmation message
+    confirmation_label.config(text="Data saved successfully!", fg="green")
 
-
-
-# Show a confirmation message
 # Create GUI window
 # Load the app photo
 # Create a label to display the app photo
