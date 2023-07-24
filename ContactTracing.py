@@ -59,8 +59,14 @@ test_status_options = ["Choose One", "Positive", "Contact"]
 test_status_menu = tk.OptionMenu(test_status_frame, test_status, *test_status_options)
 test_status_menu.pack(side=tk.LEFT)
 
-
 # Entry fields
+name_label = tk.Label(window, text="Name:", fg=text_color, bg=background_color)
+name_label.pack()
+name_entry = tk.Entry(window)
+name_entry.pack()
+
+
+
 # Additional fields for positive cases
 # Additional field for contact cases
 # Save button 
