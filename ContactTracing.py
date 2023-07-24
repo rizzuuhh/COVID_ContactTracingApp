@@ -75,6 +75,10 @@ birthday_label.pack()
 birthday_entry = tk.Entry(window)
 birthday_entry.pack()
 
+age_label = tk.Label(window, text="Age:", fg=text_color, bg=background_color)
+age_label.pack()
+age_entry = tk.Entry(window)
+age_entry.pack()
 
 
 
