@@ -32,6 +32,10 @@ def save_entry():
     confirmation_label.config(text="Data saved successfully!", fg="green")
 
 # Create GUI window
+window = tk.Tk()
+window.title("COVID Contact Tracing App")
+window.geometry("1000x1000")
+
 # Load the app photo
 # Create a label to display the app photo
 # Entry fields
