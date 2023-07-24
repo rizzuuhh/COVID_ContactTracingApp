@@ -80,6 +80,12 @@ age_label.pack()
 age_entry = tk.Entry(window)
 age_entry.pack()
 
+sex_var = tk.StringVar(value="Choose One")
+sex_label = tk.Label(window, text="Sex:", fg=text_color, bg=background_color)
+sex_label.pack()
+sex_options = ["Choose One", "Male", "Female", "Other"]
+sex_menu = tk.OptionMenu(window, sex_var, *sex_options)
+sex_menu.pack()
 
 
 # Additional fields for positive cases
