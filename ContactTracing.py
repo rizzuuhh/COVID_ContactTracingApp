@@ -146,5 +146,11 @@ def show_additional_fields(*args):
         symptoms_label.pack_forget()
         symptoms_entry.pack_forget()
 
+# Bind the show_additional_fields function to the status variable
+test_status.trace("w", show_additional_fields)
+
+window.mainloop()
+
+
 
 
