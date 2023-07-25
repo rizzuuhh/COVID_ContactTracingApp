@@ -108,3 +108,6 @@ symptoms_entry = tk.Entry(window)
 save_button = tk.Button(window, text="Save", command=save_entry, fg="white", bg=accent_color)
 save_button.pack(pady=20)
  
+ # Confirmation label
+confirmation_label = tk.Label(window, text="", font=("Arial", 12), fg="green", bg=background_color)
+confirmation_label.pack()
