@@ -111,3 +111,14 @@ save_button.pack(pady=20)
  # Confirmation label
 confirmation_label = tk.Label(window, text="", font=("Arial", 12), fg="green", bg=background_color)
 confirmation_label.pack()
+
+# Hide additional fields initially
+exposed_date_label.pack_forget()
+exposed_date_entry.pack_forget()
+close_contacts_label.pack_forget()
+close_contacts_entry.pack_forget()
+symptoms_label.pack_forget()
+symptoms_entry.pack_forget()
+
+
+
