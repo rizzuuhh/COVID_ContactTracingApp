@@ -52,6 +52,11 @@ accent_color = "#0077cc"
 # Set background color
 window.configure(bg=background_color)
 
+# Welcome message label
+welcome_text = "Welcome to the COVID 19 Contact Tracing App!"
+welcome_label = tk.Label(window, text=welcome_text, fg="black", bg=accent_color, font=("Arial", 20, "bold"))
+welcome_label.pack(fill=tk.X, pady=20)
+
 # Test Status Frame
 test_status_frame = tk.Frame(window, bg=background_color)
 test_status_frame.pack()
