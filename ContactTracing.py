@@ -43,6 +43,15 @@ app_photo = tk.PhotoImage(file="c:\\Users\\SAMSUNG\\Downloads\Black Illustration
 app_photo_label = tk.Label(window, image=app_photo)
 app_photo_label.place(x=0, y=0)  
 
+# Colors
+background_color = "white"
+text_color = "#333333"
+accent_color = "#0077cc"
+
+
+# Set background color
+window.configure(bg=background_color)
+
 # Test Status Frame
 test_status_frame = tk.Frame(window, bg=background_color)
 test_status_frame.pack()
@@ -150,7 +159,3 @@ def show_additional_fields(*args):
 test_status.trace("w", show_additional_fields)
 
 window.mainloop()
-
-
-
-
