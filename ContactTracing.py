@@ -105,3 +105,6 @@ symptoms_label = tk.Label(window, text="Symptoms:", fg=text_color, bg=background
 symptoms_entry = tk.Entry(window)
 
 # Save button 
+save_button = tk.Button(window, text="Save", command=save_entry, fg="white", bg=accent_color)
+save_button.pack(pady=20)
+ 
