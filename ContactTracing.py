@@ -122,3 +122,29 @@ symptoms_entry.pack_forget()
 
 
 
+# Function to show/hide additional fields based on user input
+def show_additional_fields(*args):
+    if test_status.get() == "Positive":
+        exposed_date_label.pack()
+        exposed_date_entry.pack()
+        close_contacts_label.pack()
+        close_contacts_entry.pack()
+        symptoms_label.pack_forget()
+        symptoms_entry.pack_forget()
+    elif test_status.get() == "Contact":
+        exposed_date_label.pack_forget()
+        exposed_date_entry.pack_forget()
+        close_contacts_label.pack_forget()
+        close_contacts_entry.pack_forget()
+        symptoms_label.pack()
+        symptoms_entry.pack()
+    else:
+        exposed_date_label.pack_forget()
+        exposed_date_entry.pack_forget()
+        close_contacts_label.pack_forget()
+        close_contacts_entry.pack_forget()
+        symptoms_label.pack_forget()
+        symptoms_entry.pack_forget()
+
+
+
